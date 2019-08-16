@@ -23,6 +23,7 @@ static {
 public void test1() throws InterruptedException {
 	WebDriver driver =new ChromeDriver();
 	driver.get("https://nexshops.com");
+	System.out.println("demo");
 	List<WebElement> footetLinks = driver.findElements(By.xpath("//div[@class=\"custom_block\"]/descendant::li"));
 	Iterator<WebElement>id =footetLinks.iterator();
 			for (int i = 0; i < footetLinks.size(); i++) {
